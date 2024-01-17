@@ -18,8 +18,14 @@
     text-align: center;
 }
 .search {
-    width: 100%
-    display: flex;
+    width: 100%;
+    display:flex;
     align-items: center;
     justify-content: space-between;
+}
+.weather h2{
+    text-shadow: 2px 2px black;
+}
+.weather h1{
+    text-shadow: 2px 2px black;
 }
