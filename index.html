@@ -22,5 +22,25 @@
                     <img src = "images/humidity.png">
         </div>
     </div>
+
+
+    <script>
+        const apiKey = "";
+        const apiUrl = "";
+
+        const searchBtn = document.querySelector(".search input");
+        const searchBtn = document.querySelector(".search button");
+
+        async function checkWeather(city){
+            const response = await fetch(apiUrl + city + '&appid=${apiKey}');
+            var data = await response.json();
+        }
+
+document.querySelector(".city").innerHTML = data.name;
+
+        searchBtn.addEventListener("click", ()=>{
+            checkWeather(searchBox.value);
+        })
+    </script>
 </body>
 </html>
