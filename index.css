@@ -23,6 +23,13 @@
     align-items: center;
     justify-content: space-between;
 }
+.weather h2 {
+    text-shadow: 5px 5px #000000;
+}
+
+h1 {
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
 .weather h2{
     text-shadow: 2px 2px black;
 }
